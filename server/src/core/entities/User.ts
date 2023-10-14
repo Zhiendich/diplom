@@ -1,7 +1,9 @@
-export abstract class User {
-  abstract firstName: string;
-  abstract lastName: string;
-  abstract email: string;
-  abstract password: string;
-  abstract role: string;
+export class User {
+  constructor(
+    readonly firstName: string,
+    readonly lastName: string,
+    readonly email: string,
+    readonly password: string,
+    readonly role: string,
+  ) {}
 }
